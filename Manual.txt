@@ -43,10 +43,11 @@ chmod u+x /root/elk/inst_set.sh
 # Start inst_set.sh
 /root/elk/inst_set.sh
 
----------------- CLIENT HOST --------------
+# -------------- CLIENT HOST --------------
 # Start filebeat_inst.sh on CLIENT host
 /root/elk/filebeat_inst.sh
 
+# -------------- BROWSER ------------------
 # Start browser and enter http://<IP balancer>:5601
 # Explore on my out
 # Discover
