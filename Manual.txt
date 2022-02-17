@@ -42,3 +42,30 @@ chmod u+x /root/elk/inst_set.sh
 
 # Start inst_set.sh
 /root/elk/inst_set.sh
+
+---------------- CLIENT HOST --------------
+# Start filebeat_inst.sh on CLIENT host
+/root/elk/filebeat_inst.sh
+
+# Start browser and enter http://<IP balancer>:5601
+# Explore on my out
+# Discover
+# Create index pattern
+# Field Name - weblogs*, Timestamp field - @timestamp
+# Create index pattern
+# Go to Discover again
+# Dashboard
+# Create new dashboard
+# Create visualization
+# Bar vertical stacked -> Bar horizontal
+# In left column in search field enter "request"
+# Position "request.keyword" with mouse put on central area of page
+# Get horozontal diagram
+# Save and return
+
+# Bar vertical stacked -> Pie
+# In right column in "Slice by" select "response"
+# In "Size by" select "Records"
+# Get sector diagram
+# Save and return
+# Put button "Save" and give name "MyDashboard"
