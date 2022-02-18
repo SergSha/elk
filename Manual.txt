@@ -56,7 +56,7 @@ chmod u+x /root/elk/inst_set.sh
 # Start browser and enter http://<IP balancer>:5601
 # Explore on my out
 # Discover
-# Create index pattern
+# Create index pattern (You can also create an index pattern against hidden or system indices.)
 # Field Name - weblogs*, Timestamp field - @timestamp
 # Create index pattern
 # Go to Discover again
