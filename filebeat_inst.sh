@@ -10,10 +10,10 @@ else
 #yum -y install java-openjdk-devel java-openjdk
 
 # Copy file elasticsearch.repo to /etc/yum.repos.d/
-#cp -f /root/elk/elasticsearch.repo /etc/yum.repos.d/
+cp -f /root/elk/elasticsearch.repo /etc/yum.repos.d/
 
 # Import key of elasticsearch repo
-#rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 # Delete all downloads packets rpm
 #yum -y clean all
