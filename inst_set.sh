@@ -62,7 +62,8 @@ systemctl enable kibana
 systemctl status kibana
 
 # Install Logstash
-yum -y install logstash filebeat auditbeat metricbeat packetbeat heartbeat-elastic
+yum -y install logstash
+# yum -y install logstash filebeat auditbeat metricbeat packetbeat heartbeat-elastic
 
 # Copy file logstash.yml into /etc/logstash/
 cp -f /root/elk/logstash.yml /etc/logstash/
@@ -71,6 +72,12 @@ cp -f /root/elk/logstash.yml /etc/logstash/
 cp -f /root/elk/logstash-nginx-es.conf /etc/logstash/conf.d/
 
 # Restart logstash
-systemctl restart logstash.service
+systemctl start logstash.service
+
+# Restart logstash
+systemctl enable logstash.service
+
+# Restart logstash
+systemctl status logstash.service
 
 fi
