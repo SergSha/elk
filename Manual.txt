@@ -47,6 +47,11 @@ chmod u+x /root/elk/inst_set.sh
 # Start filebeat_inst.sh on CLIENT host
 /root/elk/filebeat_inst.sh
 
+# Attention: filebeat.yml
+# In block ----- Logstash Output -----
+# host: [localhost:5400] -> host: [<IP Logstash host>:5400]
+# Example: host: [10.0.1.22:5400]
+
 # -------------- BROWSER ------------------
 # Start browser and enter http://<IP balancer>:5601
 # Explore on my out
