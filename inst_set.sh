@@ -51,6 +51,7 @@ yum -y install kibana
 
 # Copy file kibana.yml into /etc/kibana/
 cp -f /root/elk/kibana.yml /etc/kibana/
+cp -f /root/elk/kibana_upd.sh /etc/cron.daily/
 
 # Start kibana
 systemctl start kibana
@@ -67,6 +68,7 @@ yum -y install logstash
 
 # Copy file logstash.yml into /etc/logstash/
 cp -f /root/elk/logstash.yml /etc/logstash/
+cp -f /root/elk/logstash_upd.sh /etc/cron.daily/
 
 # Copy config file logstash-nginx-es.conf into /etc/logstash/conf.d/
 cp -f /root/elk/logstash-nginx-es.conf /etc/logstash/conf.d/

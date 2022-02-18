@@ -26,6 +26,7 @@ yum -y install filebeat auditbeat metricbeat packetbeat heartbeat-elastic
 
 # Внесём изменение в /etc/filebeat/filebeat.yml
 cp -f /root/elk/filebeat.yml /etc/filebeat/
+cp -f /root/elk/filebeat_upd.sh /etc/cron.daily/
 
 # Start filebeat
 systemctl start filebeat
