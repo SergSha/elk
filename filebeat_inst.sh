@@ -34,6 +34,6 @@ systemctl start filebeat
 systemctl enable filebeat
 
 # Get filebeat status
-Systemctl status filebeat
+systemctl status filebeat
 
 fi
