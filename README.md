@@ -32,7 +32,7 @@ DNS2=8.8.8.8</pre>
 <p>Connect to GitHub repo for download to host:</p>
 <pre>git clone https://github.com/SergSha/elk.git</pre>
 
-<p>==================For to upload to GitHub==================</p>
+<p>================== For to upload to GitHub ==================</p>
 <p>Make pair keys:</p>
 <pre>ssh-keygen
 Enter
@@ -53,7 +53,7 @@ Enter</pre>
 <p>Start inst_set.sh:</p>
 <pre>/root/elk/inst_set.sh</pre>
 
-<p>========================CLIENT HOST========================</p>
+<p>======================== CLIENT HOST ========================</p>
 <p>Start filebeat_inst.sh on CLIENT host:</p>
 <pre>/root/elk/filebeat_inst.sh</pre>
 
@@ -62,7 +62,7 @@ In block ----- Logstash Output -----
 host: [localhost:5400] -> host: [<IP Logstash host>:5400]
 Example: host: [10.0.1.22:5400]</pre>
 
-<p>==========================BROWSER==========================</p>
+<p>========================== BROWSER ==========================</p>
 <ul>
 <li>Start browser and enter http://<IP balancer>:5601</li>
 <li>Explore on my out</li>
